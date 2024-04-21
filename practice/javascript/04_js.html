@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let oddSum = 0;
+        let evenSum = 0;
+        let total = 0;
+
+        for(let i = 1; i <= 100; i++) {
+            if(i % 2 == 1) {
+                oddSum += i;
+            } else {
+                evenSum += i;
+            }
+            total += i;
+        }
+        document.write("홀수 합계 : " + oddSum + "<br/>");
+        document.write("짝수 합계 : " + evenSum + "<br/>");
+        document.write("전체 합계 : " + total + "<br/>");
+    </script>
+</body>
+</html>

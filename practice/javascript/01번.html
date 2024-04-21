@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 1</title>
+</head>
+<body>
+    <script>
+        let multiply = prompt("숫자를 입력해 주세요!");
+        // 'prompt 함수'로 입력된 값은 '문자열(string)로 반환'되어 값이 숫자인지 확인하고 바꿔야 한다.
+            multiply = parseInt(multiply);
+        /*
+            parseInt : '문자열'을 해석하여 '정수로 변환'하는 함수
+            - 이 함수는 문자열을 읽다가 숫자가 아닌 문자를 만나면 그 이전까지의 숫자 부분만을 반환
+
+            ex)
+            parseInt(123)의 결과는 '123'
+            parseInt(123abc)의 결과는 '123'
+            parseInt(abc123)의 결과는 'NaN(Not a Number)'
+        */
+            
+        if(multiply % 3 === 0){
+                document.write(`${multiply} 은(는) 3의 배수 입니다.`);
+            } else{
+                document.write(`${multiply} 은(는) 3의 배수가 아닙니다.`);
+            }
+    </script>
+</body>
+</html>

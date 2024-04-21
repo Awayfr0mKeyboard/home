@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let oddSum = 0; // 홀수의 합을 저장할 변수
+        let evenSum = 0; // 짝수의 합을 저장할 변수
+        let totalSum = 0; // 전체의 합을 저장할 변수
+
+        // 1~100까지 반복하면서 홀수와 짝수를 구분하여 합을 계산
+        for(let i = 1; i <= 100; i++) {
+            if(i % 2 === 0) {
+                // 짝수인 경우
+                evenSum += i; // 짝수의 합에 더함
+            } else {
+                // 홀수인 경우
+                oddSum += i; // 홀수의 합에 더함
+            }
+            totalSum += i;
+        } 
+
+        document.write("홀수 합계 :" + oddSum + "<br/>");
+        document.write("짝수 합계 :" + evenSum + "<br/>");
+        document.write("전체 합계 :" + totalSum + "<br/>");
+    </script>
+</body>
+</html>

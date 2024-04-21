@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 2</title>
+</head>
+<body>
+    <script>
+        let sexual = prompt("성별을 입력하세요!(남성 또는 남 그리고 여성 또는 여)");
+             switch(sexual){
+                 case '남성' :
+                 case '남' :
+                     document.write("남자 화장실은 왼쪽입니다.");
+                     break;
+                 case '여성' :
+                 case '여' :
+                     document.write("여자 화장실은 오른쪽입니다.");
+                     break;
+                 default :
+                     document.write("화장실을 찾을 수 없습니다.");
+             }
+
+        /*
+            case의 문자열 앞 뒤에 공백을 넣지 말아야 함
+            case '남성' = O
+            case ' 남성 ' = X
+        */
+        
+        // if 함수 사용 시
+            if(sexual === "남성" || sexual === "남") {
+                document.write("남자 화장실은 왼쪽입니다.");
+            } else if(sexual === "여성" || sexual === "여") {
+                document.write("여자 화장실은 오른쪽입니다.");
+            } else{
+                document.write("화장실을 찾을 수 없습니다.");
+            }
+
+        /*
+            여러 개의 값에 대해 동시에 비교하려면 ||(or) 연산자를 사용해야 한다.
+
+            =(대입 연산자)
+            ==(동등 연산자)
+            ===(일치 연산자)
+        */
+    </script>
+</body>
+</html>

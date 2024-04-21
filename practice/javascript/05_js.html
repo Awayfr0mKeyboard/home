@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const n = 50;
+        let count = 0; // 추측 횟수
+
+        while (true) { // 조건식이 false거나 break를 만나면 반복 종료, while을 작동하기 위해 true를 넣음
+            count++; // 추측 횟수 증가
+
+            let num = parseInt(prompt("1 ~ 100까지의 정수를 입력해 주세요."));
+
+            if (num < n) {
+                alert("낮습니다. 추측 횟수 : " + count);
+            } else if (num > n) {
+                alert("높습니다. 추측 횟수 : " + count);
+            } else {
+                alert("성공입니다. 추측 횟수 : " + count);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
